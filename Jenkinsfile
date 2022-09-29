@@ -14,10 +14,13 @@ pipeline {
       }
     }
     stage('Build') {
+      steps {}
     }
     stage('Test') {
+      steps {}
     }
     stage('Policy Evaluation') {
+      steps {}
     }
   }
 }
