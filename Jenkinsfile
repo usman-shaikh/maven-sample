@@ -14,13 +14,19 @@ pipeline {
       }
     }
     stage('Build') {
-      steps {}
+      steps {
+        echo 'Building'
+      }
     }
     stage('Test') {
-      steps {}
+      steps {
+        echo 'Testing'
+      }
     }
     stage('Policy Evaluation') {
-      steps {}
+      steps {
+        echo 'Evaluating'
+      }
     }
   }
 }
