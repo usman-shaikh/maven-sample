@@ -17,14 +17,9 @@ pipeline {
         ])
       }
     }
-    stage('Build') {
+    stage('Install') {
       steps {
-        sh 'mvn clean install -DskipTests'
-      }
-    }
-    stage('Test') {
-      steps {
-        sh 'mvn test'
+        sh 'mvn clean install'
       }
     }
     stage('Policy Evaluation') {
