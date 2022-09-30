@@ -24,7 +24,11 @@ pipeline {
     }
     stage('Policy Evaluation') {
       steps {
-        echo 'Evaluating'
+        nexusPolicyEvaluation(
+		      iqApplication: 'mavenSample',
+		      iqInstanceId: 'nexusIQ',
+		      iqStage: 'build'
+        )
       }
     }
   }
